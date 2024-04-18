@@ -31,3 +31,18 @@ Enter a number: 10000
 
 
 """
+question = "Enter a number."
+n = input(question)
+n = float(n)
+
+if 0 <= n <= 100:
+    print("0")
+
+if 10 <= n <= 100:
+    print("1")
+
+if 100 <= n <= 1000:
+    print("2")
+
+if n > 1000:
+    print("3")

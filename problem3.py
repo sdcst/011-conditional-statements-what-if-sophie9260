@@ -6,9 +6,6 @@
  but if it is, then ask them for a password 
  If they get the password correct (password is 12345password) 
  then display the message "Access granted"
- remember to use .strip() when retrieving strings or you will
- include hidden characters (the carriage return) that will
- not match
  1 marks
 
  Example:
@@ -23,3 +20,13 @@
  Enter password: password
  Access denied
 """
+username = input("Enter an username => ")
+
+if username == "admin":
+    password = input("Enter the password => ")
+    if password == "12345password":
+        print("Access granted")
+    else:
+        print("Access denied")
+else:
+    print("Invalid username")

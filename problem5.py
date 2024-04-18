@@ -29,3 +29,23 @@ Enter c: 8
 the equation can not be factored
 
 """
+
+a = input("Enter a number => ")
+a = int(a)
+
+b = input("Enter a number => ")
+b = int(b)
+
+c = input("Enter a number => ")
+c = int(c)
+
+t = b**2 - 4 * a * c
+
+if t < 0:
+    print("the equation can not be factored")
+elif t > 0:
+    tt = t**0.5
+    rounded = round(tt)
+    if rounded == t:
+        print("the equation can be factored")
+
